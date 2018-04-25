@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/padding_small_5"
+    android:paddingTop="@dimen/padding_small_5">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.AppCompatRatingBar
+        android:id="@+id/review_rating"
+        style="@style/ratingBarSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_medium_10dp"
+        android:layout_toRightOf="@id/title"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="3"
+        android:stepSize=".5" />
+
+    <TextView
+        android:id="@+id/descrip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/title"
+        android:paddingBottom="@dimen/padding_small_5"
+        android:paddingTop="@dimen/padding_small_5"
+        android:textColor="@color/black"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/postedby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/descrip"
+        android:text="@string/postedby"
+        android:textColor="@color/black"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descrip"
+        android:layout_marginLeft="@dimen/padding_small_5"
+        android:layout_toRightOf="@id/postedby"
+        android:textColor="@color/colorAccent"
+        android:textStyle="normal" />
+
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descrip"
+        android:layout_marginLeft="@dimen/padding_small_5"
+        android:layout_toRightOf="@id/username"
+        android:textColor="@color/black"
+        android:textStyle="normal" />
+
+
+</RelativeLayout>

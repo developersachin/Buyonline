@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/padding_50"
+            android:text="@string/otp_has_send"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_18"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/otp_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header"
+            android:layout_marginLeft="@dimen/padding_too_large_30"
+            android:layout_marginRight="@dimen/padding_too_large_30"
+            android:layout_marginTop="@dimen/padding_extra_large_20"
+            android:hint="@string/otp"
+            android:paddingLeft="@dimen/padding_small_5"
+            android:paddingTop="@dimen/padding_small_5" />
+
+
+        <TextView
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/otp_value"
+            android:layout_marginLeft="@dimen/padding_too_large_30"
+            android:layout_marginRight="@dimen/padding_too_large_30"
+            android:layout_marginTop="@dimen/padding_extra_large_20"
+            android:background="@drawable/ripple_effect"
+            android:gravity="center_horizontal"
+            android:text="@string/submit"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/resend_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/submit"
+            android:layout_marginLeft="@dimen/padding_too_large_30"
+            android:layout_marginRight="@dimen/padding_too_large_30"
+            android:layout_marginTop="@dimen/padding_50"
+            android:background="@drawable/ripple_effect_transparentbg"
+            android:gravity="center_horizontal"
+            android:text="@string/resend_otp"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/txt_size_extra_large_15" />
+
+    </RelativeLayout>
+
+
+</ScrollView>

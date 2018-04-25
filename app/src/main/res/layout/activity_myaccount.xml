@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.beliefitsolution.buyonline.myaccount.myaccount">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorAccent"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TextView
+            android:id="@+id/myacc_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/padding_small_5"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/padding_small_5"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/myacc_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/padding_small_5"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/padding_small_5"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/myacc_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/padding_small_5"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/padding_small_5"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/myacc_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password"
+            android:layout_marginLeft="@dimen/padding_too_large_30"
+            android:layout_marginRight="@dimen/padding_too_large_30"
+            android:layout_marginTop="@dimen/padding_extra_large_20"
+            android:background="@drawable/ripple_effect"
+            android:gravity="center_horizontal"
+            android:text="@string/add_address"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/myacc_orderhistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password"
+            android:layout_marginLeft="@dimen/padding_too_large_30"
+            android:layout_marginRight="@dimen/padding_too_large_30"
+            android:layout_marginTop="@dimen/padding_extra_large_20"
+            android:background="@drawable/ripple_effect"
+            android:gravity="center_horizontal"
+            android:text="@string/order_history"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/rounder_corner_black">
+
+    <TextView
+        android:id="@+id/btn_x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/ripple_effect"
+        android:text="@string/x"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txt_size_22"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="@dimen/padding_small_5"
+        android:paddingTop="@dimen/padding_small_5"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txt_size_extra_large_15"
+        android:textStyle="bold"
+        tools:text="title" />
+
+    <TextView
+        android:id="@+id/txt_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_title"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:paddingBottom="@dimen/padding_small_5"
+        android:paddingTop="@dimen/padding_small_5"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txt_size_extra_large_15"
+        android:textStyle="normal"
+        tools:text="msg" />
+
+
+    <ImageView
+        android:id="@+id/img_fcm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_msg"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/padding_normal_8dp"
+        android:gravity="center"
+        android:padding="@dimen/padding_small_5"
+        android:scaleType="centerCrop" />
+
+</RelativeLayout>

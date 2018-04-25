@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorAccent"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:id="@+id/relative_lay1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <RadioGroup
+                android:id="@+id/radiogroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp">
+
+                <RadioButton
+                    android:id="@+id/radio_cash_on"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddinng_large_15"
+                    android:layout_marginTop="@dimen/paddinng_large_15"
+                    android:text="@string/cash_on_delivery" />
+
+                <RadioButton
+                    android:id="@+id/radio_payment_gateway"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/radio_cash_on"
+                    android:layout_marginLeft="@dimen/paddinng_large_15"
+                    android:layout_marginTop="@dimen/paddinng_large_15"
+                    android:checked="true"
+                    android:text="@string/paymentGateway" />
+
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/radiogroup"
+                android:layout_marginLeft="@dimen/paddinng_large_15"
+                android:layout_marginTop="@dimen/padding_medium_10dp"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/place_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/padding_too_large_30"
+                android:layout_marginLeft="@dimen/padding_too_large_30"
+                android:layout_marginRight="@dimen/padding_too_large_30"
+                android:layout_marginTop="@dimen/padding_extra_large_20"
+                android:background="@drawable/ripple_effect"
+                android:gravity="center_horizontal"
+                android:text="@string/place_order"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_lay2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/thankyou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/padding_medium_10dp"
+                android:gravity="center"
+                android:text="@string/thankyou"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/you_orderplaced"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/thankyou"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/padding_medium_10dp"
+                android:gravity="center"
+                android:text="@string/your_orderPlaced"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/grey_light"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:id="@+id/imagedone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/you_orderplaced"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/paddinng_large_15" />
+
+            <TextView
+                android:id="@+id/orderIdtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imagedone"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/padding_medium_10dp"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/orderdeliveryinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/orderIdtxt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/padding_medium_10dp"
+                android:gravity="center"
+                android:text="@string/we_will_inform_you"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/grey_light"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/continueshipping"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/padding_too_large_30"
+                android:layout_marginLeft="@dimen/padding_too_large_30"
+                android:layout_marginRight="@dimen/padding_too_large_30"
+                android:layout_marginTop="@dimen/padding_extra_large_20"
+                android:background="@drawable/rounded_green_login"
+                android:gravity="center_horizontal"
+                android:text="@string/continue_shipping"
+                android:textColor="@color/white" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
